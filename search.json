@@ -126,6 +126,13 @@
     "text": "Shape model - parametrisation\n\n\n\n\n\nEncoding the shape of the lung in a low-dimensional space\n\n\n\nIn order to feed the surrogate model we need a parametrisation of the lung\nROM on the shape mappings library\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMappings’ library\n\n\n\n\n\n\n\n\n                                                \n\n\n\n\n\n\n\n\n\nShape model\n\n\n\nShape analysis\nModel-order reduction on shapes\n\nParametrisation of the shape\n\\(\\Omega = \\Omega\\left(\\textcolor{LGreenLMS}{\\left\\{\\mu_i\\right\\}_{i \\in \\mathopen{~[\\!\\![~}1, \\beta  \\mathclose{~]\\!\\!]}}}\\right)\\)\n\nSVD\nk-PCA\nAuto-encoder\n\nPersonalising the digital twin"
   },
   {
+    "objectID": "index.html#conclusion",
+    "href": "index.html#conclusion",
+    "title": "Towards Real-Time Simulation and Registration of human lungs",
+    "section": "Conclusion",
+    "text": "Conclusion\n\n\n\n\nConclusion\n\n\n\nRobust and straightforward general implementation of a autodiff-PGD\n\nInterpretable\nBenefits from all recent developments in machine learning\n\nSurrogate modelling of parametrised PDE solution\n\nPromising results on simple toy case\nShape variability taken into account\n\n\n\n\n\n\n\n\n\n\nPerspectives for patient-specific applications\n\n\n\nPersonalised shape-informed digital-twins\n\nKaterina Skardova Monday at 6:00 pm\n\n\n\n\nVideo\n\n\n\n\n+\n\n\n\n\nVideo\n\n\n\n\n\n\n\n\nProspective applications\n\n\n\nDigital twin for\n\nreal-time patient-specific simulations\n\nDiagnostics and prognostics\nControl of medical devices (forced ventilation, etc)\n\nshape-optimisation (of 3D printed organs, personalised prosthesis, etc.)\n\nInexpensive shape derivative of mechanical quantities\n\n\n\n\n\n\n   Papers: (Daby-Seesaram et al., 2025; Škardová et al., 2025)\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\nGithub page"
+  },
+  {
     "objectID": "index.html#shape-model---from-an-average-shape",
     "href": "index.html#shape-model---from-an-average-shape",
     "title": "Towards Real-Time Simulation and Registration of human lungs",
@@ -138,13 +145,6 @@
     "title": "Towards Real-Time Simulation and Registration of human lungs",
     "section": "Preliminary results on varying porosity",
     "text": "Preliminary results on varying porosity\nVarying porosity value changing the geometry of the local RVE.\n\n\n\n\n\nReference problem\n\n\n\n\n\n\nh=0.1\n\n\n\n\n\n\nh=0.15\n\n\n\n\n\n\n\n\nShapes definition\n\n\n\n\n\n\nh=0.2\n\n\n\n\n\n\nh=0.3"
-  },
-  {
-    "objectID": "index.html#conclusion",
-    "href": "index.html#conclusion",
-    "title": "Towards Real-Time Simulation and Registration of human lungs",
-    "section": "Conclusion",
-    "text": "Conclusion\n\n\n\n\nConclusion\n\n\n\nRobust and straightforward general implementation of a autodiff-PGD\n\nInterpretable\nBenefits from all recent developments in machine learning\n\nSurrogate modelling of parametrised PDE solution\n\nPromising results on simple toy case\nShape variability taken into account\n\n\n\n\n\n\n\n\n\n\nPerspectives for patient-specific applications\n\n\n\nPersonalised shape-informed digital-twins\n\n\n\nVideo\n\n\n\n\n+\n\n\n\n\nVideo\n\n\n\n\n\n\n\n\nProspective applications\n\n\n\nDigital twin for\n\nreal-time patient-specific simulations\n\nDiagnostics and prognostics\nControl of medical devices (forced ventilation, etc)\n\nshape-optimisation (of 3D printed organs, personalised prosthesis, etc.)\n\nInexpensive shape derivative of mechanical quantities\n\n\n\n\n\n\n   Papers: (Daby-Seesaram et al., 2025; Škardová et al., 2025)\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\nGithub page"
   },
   {
     "objectID": "index.html#references",
