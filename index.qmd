@@ -1170,7 +1170,7 @@ Note
 :::: {style='margin-top: 3em;'}
 ::::
 
-![](Figures/Movies/Lung_gravity_ter.mov){ width=90% loop="true" autoplay=true fig-align="center"}
+![](Figures/Movies/Lung_gravity_qua.mov){ width=90% loop="true" autoplay=true fig-align="center"}
 
 
 :::
@@ -1572,7 +1572,7 @@ Perspectives for patient-specific applications
 
 ::: {.column width="50%"}
 
-![](Figures/Movies/Lung_gravity_ter.mov){.absolute height=130 loop="true" autoplay=true}
+![](Figures/Movies/Lung_gravity_qua.mov){.absolute height=130 loop="true" autoplay=true}
 
 :::
 
