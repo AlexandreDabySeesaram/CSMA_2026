@@ -1,7 +1,7 @@
 ---
-title: "Finite element neural network interpolation: Hybridisation with the proper generalised decomposition for non-linear surrogate modelling"
-subtitle: "F2M - Méthodes de Machine Learning en modélisation mécanique"
-date: 02/19/2026
+title: "Towards Real-Time Simulation and Registration of human lungs"
+subtitle: "CSMA 2026"
+date: 04/20/2026
 author: 
     - name: Alexandre Daby-Seesaram <sup><span style="color:#a6ce39ff">[{{< iconify fa-brands:orcid >}}](https://orcid.org/0000-0002-2374-0971)</span></sup>
       email: alexandre.daby-seesaram@polytechnique.edu
@@ -24,26 +24,26 @@ affiliations:
 
 # I - Part I (Hidden) {visibility="hidden"}
 
-
+<!-- 
 ## Background - computational mechanics
 
-![](Figures/CV.svg){height="100%" fig-align="center"}
+![](Figures/CV.svg){height="100%" fig-align="center"} -->
 
 
 
-## Idiopathic Pulmonary Fibrosis
+## Why a lung digital twin ? 
 
 :::: {.columns}
 
 ::: {.column width="50%"}
 
-![Inspiration & expiration of diseased lungs](Figures/Movies/lung-im.mp4){ height="300" loop="true" autoplay=true}
+![Inspiration & expiration of diseased lungs](Figures/Movies/lung-im.mp4){ height="250" loop="true" autoplay=true}
 
 :::
 
 ::: {.column width="50%"}
 
-![Digital twin from images](Figures/Movies/Lungs_digital_twin.mp4){ height="300" loop="true" autoplay=true}
+![Digital twin from images](Figures/Movies/Lungs_digital_twin.mp4){ height="250" loop="true" autoplay=true}
 
 :::
 
@@ -57,20 +57,23 @@ affiliations:
 :::: {.mybox}
 
 ::: {.mybox-header}
-Objectives
+Objectives 
 :::
 
 ::: {.mybox-body}
+
+* See **Martin**'s talk on Wednesday at the plenary session
+
 * Improved understanding of the **mechanically-driven** physiological mechanisms
 
-:::: {style='margin-top: 0.2em;'}
-::::
 
 * *In silico* prognostics
   * Transfer tools to the clinic
   * Patient-specific **digital twins**
 
 
+:::: {style='margin-top: 2em;'}
+::::
 
 :::
 
@@ -91,6 +94,8 @@ Requirements
 ::: {.fragment fragment-index=1 .fade-in}
 
 * [Mechanical model of the lung [@patteQuasistaticPoromechanicalModel2022;@peyrautQuantificationDincertitudesPour2024a]]{.positive}
+  * **Haotian Xiao** : Modélisation à double porosité d’une microstructure à trois
+phases pour la perfusion pulmonaire
 
 :::
 ::: {.fragment .fade-in}
@@ -520,6 +525,8 @@ Degrees of freedom (Dofs)
 
  {{< iconify fa-solid:newspaper >}} &nbsp; **Paper** [@skardovaFiniteElementNeural2025]      
   
+  **Monday at 6:00 pm**
+
 :::
 
 
@@ -1138,7 +1145,37 @@ Note
 
 ::::
 
+## Simplified (linear) lung digital twin
 
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![Multi-level training convergence](Schemes/lung_pressure_zoomed.svg){width=60%}
+
+* $\Pi = W_{\text{int}} + \int_{\partial \Omega} k_b \Vert \vect{u}\cdot \vect{n} \Vert^2 \mathrm{d}S - \int_{\partial \Omega} p \vect{u} \cdot \vect{n}$
+  * $p = p_0 + H\left(z-z_0 \right) + H\left(x-x_0 \right)$
+
+:::: {style='margin-top: 1em;'}
+::::
+
+* **Difficulty** : Knowing the physiological boundary conditions
+  * **Felipe Álvarez-Barriento** : Data-driven reduced modeling of pleural pressure - 10:15 am on Friday 
+
+:::
+
+
+::: {.column width="50%"}
+
+:::: {style='margin-top: 3em;'}
+::::
+
+![](Figures/Movies/Lung_gravity_ter.mov){ width=90% loop="true" autoplay=true fig-align="center"}
+
+
+:::
+
+::::
 
 
 
@@ -1503,7 +1540,7 @@ Conclusion
 
 ::: {.mybox-body}
 
-* Robust and straightforward general implementation of a NN-PGD
+* Robust and straightforward general implementation of a **autodiff-PGD**
   * Interpretable
   * Benefits from all recent developments in machine learning
 * Surrogate modelling of parametrised PDE solution
@@ -1535,7 +1572,7 @@ Perspectives for patient-specific applications
 
 ::: {.column width="50%"}
 
-![](Figures/Movies/BiAngle.mov){.absolute height=130 loop="true" autoplay=true}
+![](Figures/Movies/Lung_gravity_ter.mov){.absolute height=130 loop="true" autoplay=true}
 
 :::
 
